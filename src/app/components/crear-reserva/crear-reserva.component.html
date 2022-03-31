@@ -1,0 +1,9 @@
+
+    <span>Generar Reserva</span>
+
+    <form [formGroup] = "reservaForm" (ngSubmit)= "onSubmit()">
+            <input placeholder="usuario reserva" formControlName="id_usuario">
+            <button [disabled]="!reservaForm.valid"> Generar Reserva</button>
+
+    </form>
+
